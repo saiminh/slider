@@ -1,0 +1,53 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+.slider {
+  position: relative;
+  padding: 4rem 0;
+}
+@media (max-width: 781px) {
+  .slider {
+    padding: 2rem 0;
+  }
+}
+
+.slider-slides {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.slider-slides::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4rem;
+  padding-left: var(--wp--preset--spacing--outer);
+  height: 100%;
+  cursor: pointer;
+  z-index: 1;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 fill=%27none%27 viewBox=%270 0 29 23%27%3E%3Cpath stroke=%27%23FA5A01%27 d=%27M11.488.934 1.001 11.42l10.487 10.487M1 11.469h27.672%27/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: var(--wp--preset--spacing--outer) 50%;
+  background-size: 1.5rem;
+  border: none;
+  background-color: transparent;
+  color: transparent;
+}
+
+.slider-control-next {
+  transform: rotate(180deg);
+  left: auto;
+  right: 0;
+  padding-left: 0;
+  padding-right: var(--wp--preset--spacing--outer);
+}
+
+/*# sourceMappingURL=style-index.css.map*/
